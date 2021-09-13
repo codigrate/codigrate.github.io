@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://codigrate.com">
-    <img src="./assets/logo/brand-logo.png" alt="Logo" width=200>
+    <img src="https://raw.githubusercontent.com/codigrate/codigrate.github.io/main/assets/logo/brand-logo.png" alt="Logo" width=200>
   </a>
 </p>
 
