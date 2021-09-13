@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Codigrate - Error</title>
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content='width=device-width, initial-scale=1, viewport-fit=cover' name='viewport'>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link href="assets/favicons/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/favicons/favicon.png" rel="shortcut icon" type="image/png">
+  <link href="assets/favicons/site.webmanifest" rel="manifest">
+  <link color="#00BAFF" href="assets/favicons/safari-pinned-tab.svg" rel="mask-icon">
+
+  <meta content="assets/favicons/browserconfig.xml" name="msapplication-config"/>
+  <meta content="#00BAFF" name="msapplication-TileColor">
+
+  <style>
+    :root {
+      --brand-color-sky-blue-theme: #00BAFF;
+
+      --color-light-mode: #545454;
+      --darker-light-mode: #2b2b2b;
+
+      --color-dark-mode: #e0e0e0;
+      --darker-dark-mode: #f0f0f0;
+
+      --color: var(--color-light-mode);
+      --darker: var(--darker-light-mode);
+    }
+
+    html, body {
+      min-height: 100vh;
+      height: auto;
+    }
+
+    body {
+      margin: 0;
+      overflow: auto;
+      font-size: 17px;
+    }
+
+    body, textarea, input {
+      font-family: Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body::-webkit-scrollbar {
+      width: 0.25em;
+    }
+
+    body::-webkit-scrollbar:horizontal {
+      display: none;
+    }
+
+    div * {
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none;
+    }
+
+    /* IE 10+ */
+    ::-webkit-scrollbar-track {
+      -webkit-box-shadow: none !important;
+      background-color: transparent;
+    }
+
+    ::-webkit-scrollbar {
+      width: 0 !important;
+      background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: transparent;
+    }
+
+    p, a, h1, h2, h3, h4, h5, h6, label, ul, li {
+      color: var(--color);
+      font-weight: 300;
+      word-break: break-word;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .layers {
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      z-index: 1;
+    }
+
+    .layers svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 100%;
+      min-height: 250px;
+      max-height: 450px;
+    }
+
+    .top-layer {
+      position: absolute;
+      left: 0;
+    }
+
+    .index-splash-page {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: white;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .index-splash-hero {
+      margin-top: 60px;
+      padding-top: 8vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      z-index: 2;
+    }
+
+    .index-splash-hero h2 {
+      color: var(--color);
+      margin-top: 20px;
+    }
+
+    .index-splash-hero h3 {
+      color: var(--brand-color-sky-blue-theme);
+    }
+
+    .index-splash-hero a {
+      color: var(--brand-color-sky-blue-theme);
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    @media only screen and (max-width: 999px) {
+      .index-splash-hero {
+        max-width: 90%;
+      }
+    }
+
+    @media only screen and (min-width: 1000px) {
+      .index-splash-hero {
+        max-width: 50%;
+      }
+    }
+
+    @media (hover: hover) {
+      a:hover {
+        color: var(--darker);
+      }
+
+      .index-splash-hero a:hover {
+        color: var(--brand-color-sky-blue-theme);
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color: var(--color-dark-mode);
+        --darker: var(--darker-dark-mode);
+      }
+
+      .index-splash-page {
+        background: #353535;
+      }
+
+      .index-splash-hero h1 {
+        color: #e0e0e0;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="index-splash-page">
+  <div class="layers top-layer">
+    <svg viewBox="0 0 1000 250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax slice">
+      <path d="M 0,250 1000,120 V 0 H 0 Z" style="fill: var(--brand-color-sky-blue-theme);"></path>
+    </svg>
+  </div>
+  <div class="index-splash-hero">
+    <div class="raw-landing-raw-content-page">
+      <div class="hero">
+        <div class="brand-logo-wrapper hero-content">
+          <div>
+            <img src="https://raw.githubusercontent.com/codigrate/codigrate.github.io/main/assets/logo/brand-logo.png" alt="logo" class="brand-logo" height="150"/>
+          </div>
+          <h1>404 Page not found</h1>
+        </div>
+        <h3>Something went wrong!</h3>
+        <a href="index.html">
+          HOME
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
