@@ -13,6 +13,18 @@ if [ ! -d "./assets/min/logo" ]; then
 fi
 resize-image -i ./assets/logo/brand-logo.png -o ./assets/min/logo/brand-logo.min.png -h 200
 
+echo "logos"
+if [ ! -d "./assets/min/logo/light" ]; then
+  mkdir assets/min/logo/light
+fi
+resize-image -i ./assets/logo/light/inline.png -o ./assets/min/logo/light/inline.min.png -h 400
+
+echo "logos"
+if [ ! -d "./assets/min/logo/dark" ]; then
+  mkdir assets/min/logo/dark
+fi
+resize-image -i ./assets/logo/dark/inline.png -o ./assets/min/logo/dark/inline.min.png -h 400
+
 echo "wallpaper"
 if [ ! -d "./assets/min/wallpaper" ]; then
   mkdir assets/min/wallpaper
