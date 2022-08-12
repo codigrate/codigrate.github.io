@@ -7,19 +7,19 @@ if [ ! -d "./assets/min" ]; then
   mkdir assets/min
 fi
 
-echo "logos"
+echo "logo"
 if [ ! -d "./assets/min/logo" ]; then
   mkdir assets/min/logo
 fi
 resize-image -i ./assets/logo/brand-logo.png -o ./assets/min/logo/brand-logo.min.png -h 200
 
-echo "logos"
+echo "logo"
 if [ ! -d "./assets/min/logo/light" ]; then
   mkdir assets/min/logo/light
 fi
 resize-image -i ./assets/logo/light/inline.png -o ./assets/min/logo/light/inline.min.png -h 400
 
-echo "logos"
+echo "logo"
 if [ ! -d "./assets/min/logo/dark" ]; then
   mkdir assets/min/logo/dark
 fi
@@ -60,5 +60,13 @@ fi
 resize-image -i ./assets/wallpaper/logo/branches/mobile/color.png -o ./assets/min/wallpaper/logo/branches/mobile/color.min.png -h 400
 resize-image -i ./assets/wallpaper/logo/branches/mobile/dark.png -o ./assets/min/wallpaper/logo/branches/mobile/dark.min.png -h 400
 resize-image -i ./assets/wallpaper/logo/branches/mobile/light.png -o ./assets/min/wallpaper/logo/branches/mobile/light.min.png -h 400
+
+echo "badges"
+if [ ! -d "./assets/min/badge" ]; then
+  mkdir assets/min/badge
+fi
+resize-image -i ./assets/badge/business-partner-light.png -o ./assets/min/badge/business-partner-light.min.png -h 200
+resize-image -i ./assets/badge/business-partner-dark.png -o ./assets/min/badge/business-partner-dark.min.png -h 200
+
 
 echo "minify image process completed"
