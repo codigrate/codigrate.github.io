@@ -10,3 +10,5 @@ Codigrate
 <p align="center">
   <a href="https://codigrate.com">codigrate.com</a>
 </p>
+
+[![Website](https://img.shields.io/website?down_color=red&down_message=down&label=codigrate.com&style=for-the-badge&up_color=green&up_message=up&url=https%3A%2F%2Fcodigrate.com)](https://codigrate.com)
